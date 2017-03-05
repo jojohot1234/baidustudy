@@ -3,29 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <title>响应式网格布局</title>
-  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <style type="text/css">
-  .row div { border: 1px solid #999; background: #eee; height: 50px; }
+  * { padding: 0; margin: 0; }
+  .container { width: 95%; margin: 10 auto; }
+  .out { box-sizing: border-box; padding: 10px; float: left; }
+  .in { height: 50px; border: 1px solid #999; background: #eee; }
+  .col-md-1 { width: 8.333333% }
+  .col-md-2 { width: 16.666667%; }
+  .col-md-3 { width: 25% }
+  .col-md-4 { width: 33.333333% }
+  .col-md-5 { width: 41.677777% }
+  .col-md-6 { width: 50% }
+  .col-md-7 { width: 58.333333% }
+  .col-md-8 { width: 66.666667% }
+  .col-md-9 { width: 75% }
+  .col-md-10 { width: 83.333333% }
+  .col-md-11 { width: 91.666667% }
+  .col-md-12 { width: 100% }
+@media screen and (max-width: 768px) {
+  .col-xs-1 { width: 8.333333% }
+  .col-xs-2 { width: 16.666667%; }
+  .col-xs-3 { width: 25% }
+  .col-xs-4 { width: 33.333333% }
+  .col-xs-5 { width: 41.677777% }
+  .col-xs-6 { width: 50% }
+  .col-xs-7 { width: 58.333333% }
+  .col-xs-8 { width: 66.666667% }
+  .col-xs-9 { width: 75% }
+  .col-xs-10 { width: 83.333333% }
+  .col-xs-11 { width: 91.666667% }
+  .col-xs-12 { width: 100% }
+}
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-xm-6 col-md-4"></div>
-      <div class="col-xm-6 col-md-4"></div>
-      <div class="col-xm-12 col-md-4"></div>
+    <div class="out col-xs-6 col-md-4">
+      <div class="in"></div>
     </div>
-    <div class="row">
-      <div class="col-xm-3 col-md-3"></div>
-      <div class="col-xm-6 col-md-6"></div>
-      <div class="col-xm-3 col-md-3"></div>
+    <div class="out col-xs-6 col-md-4">
+      <div class="in"></div>
     </div>
-    <div class="row">
-      <div class="col-xm-2 col-md-1"></div>
-      <div class="col-xm-2 col-md-1"></div>
-      <div class="col-xm-8 col-md-2"></div>
-      <div class="col-xm-3 col-md-2"></div>
-      <div class="col-xm-3 col-md-6"></div>
+    <div class="out col-xs-12 col-md-4">
+      <div class="in"></div>
+    </div>
+    <div class="out col-xs-3 col-md-3">
+      <div class="in"></div>
+    </div>
+    <div class="out col-xs-6 col-md-6">
+      <div class="in"></div>
+    </div>
+    <div class="out col-xs-3 col-md-3">
+      <div class="in"></div>
+    </div>
+    <div class="out col-xs-2 col-md-1">
+      <div class="in"></div>
+    </div>
+    <div class="out col-xs-2 col-md-1">
+      <div class="in"></div>
+    </div>
+    <div class="out col-xs-8 col-md-2">
+      <div class="in"></div>
+    </div>
+    <div class="out col-xs-3 col-md-2">
+      <div class="in"></div>
+    </div>
+    <div class="out col-xs-3 col-md-6">
+      <div class="in"></div>
     </div>
   </div>
 </body>
